@@ -1,0 +1,21 @@
+Hospital Management System In VB.NET
+
+Login Details
+
+Username : admin
+Password : admin
+
+
+Developed By Olasunkanmi Oyadokun
+
+***** IF YOU FIND ANY ERRORS OR ANY PROBLEMS RELATED THIS PROGRAM, FEEL FREE TO CONTACT US *****  
+
+
+***** LEAVE A COMMENT IF YOU LOVED OUR WORK *****
+
+
+***** FOR MORE PROJECTS :- https://github.com/CodeWithPundir *****
+
+
+
+#THANK YOU FOR WATCHING

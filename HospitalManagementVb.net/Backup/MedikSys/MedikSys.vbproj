@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BD0FB77-3E4E-4545-97C3-F81DCC0DFA54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MedikSys.My.MyApplication</StartupObject>
+    <RootNamespace>MedikSys</RootNamespace>
+    <AssemblyName>MedikSys</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MedikSys.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MedikSys.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bin\Reports\Crtdental.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crtdental.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Reports\crteye.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crteye.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Reports\crtlab.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crtlab.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Reports\CrystalReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Reports\CrystalReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="bin\Reports\CrystalReport3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmconsultantcy.Designer.vb">
+      <DependentUpon>frmconsultantcy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmconsultantcy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmconsultlogin.Designer.vb">
+      <DependentUpon>frmconsultlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmconsultlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmconsultreport.Designer.vb">
+      <DependentUpon>frmconsultreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmconsultreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmdental.Designer.vb">
+      <DependentUpon>frmdental.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmdental.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmdentallogin.Designer.vb">
+      <DependentUpon>frmdentallogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmdentallogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmdentalreport.Designer.vb">
+      <DependentUpon>frmdentalreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmdentalreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmeye.Designer.vb">
+      <DependentUpon>frmeye.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmeye.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmeyelogin.Designer.vb">
+      <DependentUpon>frmeyelogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmeyelogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmeyereport.Designer.vb">
+      <DependentUpon>frmeyereport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmeyereport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmhelp.Designer.vb">
+      <DependentUpon>frmhelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmhelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmlab.Designer.vb">
+      <DependentUpon>frmlab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmlab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmlablogin.Designer.vb">
+      <DependentUpon>frmlablogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmlablogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmlabreport.Designer.vb">
+      <DependentUpon>frmlabreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmlabreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmlogin.Designer.vb">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmlogindental.Designer.vb">
+      <DependentUpon>frmlogindental.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmlogindental.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMainform.Designer.vb">
+      <DependentUpon>frmMainform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRegistration.Designer.vb">
+      <DependentUpon>frmRegistration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRegistration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmregreport.Designer.vb">
+      <DependentUpon>frmregreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmregreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmxray.Designer.vb">
+      <DependentUpon>frmxray.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmxray.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmxraylogin.Designer.vb">
+      <DependentUpon>frmxraylogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmxraylogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmxrayreport.Designer.vb">
+      <DependentUpon>frmxrayreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmxrayreport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Module1.vb" />
+    <Compile Include="Modules\Module2.vb" />
+    <Compile Include="Modules\Module3.vb" />
+    <Compile Include="Modules\moduledental.vb" />
+    <Compile Include="Modules\moduleeye.vb" />
+    <Compile Include="Modules\Modulelab.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bin\Reports\Crtdental.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crtdental.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Reports\crteye.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crteye.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Reports\crtlab.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crtlab.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Reports\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Reports\CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bin\Reports\CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmconsultantcy.resx">
+      <DependentUpon>frmconsultantcy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmconsultlogin.resx">
+      <DependentUpon>frmconsultlogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmconsultreport.resx">
+      <DependentUpon>frmconsultreport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmdental.resx">
+      <DependentUpon>frmdental.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmdentallogin.resx">
+      <DependentUpon>frmdentallogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmdentalreport.resx">
+      <DependentUpon>frmdentalreport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmeye.resx">
+      <DependentUpon>frmeye.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmeyelogin.resx">
+      <DependentUpon>frmeyelogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmeyereport.resx">
+      <DependentUpon>frmeyereport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmhelp.resx">
+      <DependentUpon>frmhelp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmlab.resx">
+      <DependentUpon>frmlab.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmlablogin.resx">
+      <DependentUpon>frmlablogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmlabreport.resx">
+      <DependentUpon>frmlabreport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmlogin.resx">
+      <DependentUpon>frmlogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmlogindental.resx">
+      <DependentUpon>frmlogindental.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMainform.resx">
+      <DependentUpon>frmMainform.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRegistration.resx">
+      <DependentUpon>frmRegistration.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmregreport.resx">
+      <DependentUpon>frmregreport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmxray.resx">
+      <DependentUpon>frmxray.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmxraylogin.resx">
+      <DependentUpon>frmxraylogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmxrayreport.resx">
+      <DependentUpon>frmxrayreport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
